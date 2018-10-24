@@ -37,14 +37,14 @@ endef
 define Package/python-idna
 $(call Package/python-idna/Default)
   TITLE:=python-idna
-  DEPENDS:=+PACKAGE_python-idna:python-light
+  DEPENDS:=+PACKAGE_python-idna:python-light +python-codecs
   VARIANT:=python
 endef
 
 define Package/python3-idna
 $(call Package/python-idna/Default)
   TITLE:=python3-idna
-  DEPENDS:=+PACKAGE_python3-idna:python3-light
+  DEPENDS:=+PACKAGE_python3-idna:python3-light +python3-codecs
   VARIANT:=python3
 endef
 
